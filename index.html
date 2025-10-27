@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Store</title>
+
+    <link rel="icon" type="image/icon" href="favicon.webp" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Grocery</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="user-btn"></div>
+    </div>
+
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="search here" />
+    </form>
+
+      <!-- DYNAMIC SHOPPING CART -->
+    <div class="shopping-cart">
+        <div class="cart-items"><!-- items injected here --></div>
+        <div class="total">total: $0.00</div>
+        <a href="#" class="btn">Checkout</a>
+    </div>
+
+    <form action="#" class="login-form">
+        <h3>login now</h3>
+        <input type="email" class="box" placeholder="enter your email" />
+        <input type="password" class="box" placeholder="enter password" />
+        <p>Forget password <a href="#">Click here</a></p>
+        <p>Don't have an account <a href="#">Create now</a></p>
+        <input type="submit" class="btn" value="Login" />
+    </form>
+    </header>
+
+    <!--home-pg-->
+    <section class="home" id="home">
+        <div class="content">
+        <h3>Fresh and <span>Organic</span> products for you</h3>
+        <p>This website provides the best products to meet all your grocery needs — 
+          from fresh fruits and vegetables to daily essentials and household items. Shop easily, save time, and enjoy </p>
+        <a href="#products" class="btn">Shop now</a></div>
+    </section>
+
+    <!--features-->
+    <section class="features" id="features">
+        <h1 class="heading">Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="feature1.webp" alt="Fresh and Organic" />
+                <h3>Fresh And Organic</h3>
+                <p>Products are maintained in hygiene methods and bought directly fromfarmers associated with us</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="freedeliver.webp" alt="Free delivery" />
+                <h3>Free delivery</h3>
+                <p>We offer free and safe delivery and you can contact with our delivery partner for more details </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <img src="payment.webp" alt="Easy Payments" />
+                <h3>Easy Payments</h3>
+                <p>All kinds of Payments like COD, UPI, Credit or Debit are allowed</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--products-->
+    <section class="products" id="products">
+        <h1 class="heading">Our <span>Products</span></h1>
+
+        <div class="swiper product-slider" id="Vegetables">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="product5.webp" alt="Cauliflower" />
+                    <h1>Cauliflower</h1>
+                    <div class="price">$6.45 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product2.webp" alt="Tomatoes" />
+                    <h1>Tomatoes</h1>
+                    <div class="price">$4.08 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product4.webp" alt="Brinjal" />
+                    <h1>Brinjal</h1>
+                    <div class="price">$4.98 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="CORN.webp" alt="corn" />
+                    <h1>Corn</h1>
+                    <div class="price">$5.58 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="BOTTLEGUARD.webp" alt="bottleguard" />
+                    <h1>Bottleguard</h1>
+                    <div class="price">$4.33 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product5.webp" alt="Cauliflower" />
+                    <h1>Cauliflower</h1>
+                    <div class="price">$6.45 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="capsicum.webp" alt="Capsicum" />
+                    <h1>Capsicum</h1>
+                    <div class="price">$3.23 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="peas.webp" alt="peas" />
+                    <h1>Peas</h1>
+                    <div class="price">$4.16 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="potato.webp" alt="Potato" />
+                    <h1>Potato</h1>
+                    <div class="price">$6.31 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper product-slider" id="Fruits">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="grapes.webp" alt="Grapes" />
+                    <h1>Grapes</h1>
+                    <div class="price">$3.97 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="kiwi.webp" alt="Kiwi" />
+                    <h1>Kiwi</h1>
+                    <div class="price">$8.88 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="dragon.webp" alt="Dragon" />
+                    <h1>Dragon Fruit</h1>
+                    <div class="price">$9.89 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product3.webp" alt="Banana" />
+                    <h1>Banana</h1>
+                    <div class="price">$4.02 - Dozen</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="product6.webp" alt="Beetroot" />
+                    <h1>Beetroot</h1>
+                    <div class="price">$8.76 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="guava.webp" alt="Guava" />
+                    <h1>Guava</h1>
+                    <div class="price">$7.09 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="strawberry.webp" alt="Strawberry" />
+                    <h1>Strawberry</h1>
+                    <div class="price">$7.89 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product11.webp" alt="Carrots" />
+                    <h1>Carrots</h1>
+                    <div class="price">$6.97 - 50gms</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Pomegranate.webp" alt="Pomegranate" />
+                    <h1>Pomegranate</h1>
+                    <div class="price">$5.43 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <div class="swiper product-slider" id="Meat">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="product1.webp" alt="Fresh chicken" />
+                    <h1>Frozen chicken Body</h1>
+                    <div class="price">$13.74 - Body</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product7.webp" alt="Fresh Mutton" />
+                    <h1>Frozen Mutton</h1>
+                    <div class="price">$15.79 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product9.webp" alt="Fish" />
+                    <h1>Frozen Fish Meat</h1>
+                    <div class="price">$11.84 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Prawn.webp" alt="Prawn" />
+                    <h1>Frozen Prawn Meat</h1>
+                    <div class="price">$12.02 - 1kg</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="liver.webp" alt="Liver" />
+                    <h1>Frozen Chicken Liver</h1>
+                    <div class="price">$8.77 - 50gms</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper product-slider" id="Diary">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="product10.webp" alt="Eggs Tray" />
+                    <h1>Eggs-Tray</h1>
+                    <div class="price">$7.39</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="product8.webp" alt="Curd" />
+                    <h1>Curd</h1>
+                    <div class="price">$4.31 - 1ltr</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="milk.webp" alt="Milk" />
+                    <h1>Milk</h1>
+                    <div class="price">$2.84 - 1ltr</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="bread.webp" alt="Bread" />
+                    <h1>Bread</h1>
+                    <div class="price">$4.02 - 750gms</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="buttter.webp" alt="Butter" />
+                    <h1>Butter</h1>
+                    <div class="price">$6.77 - 500gms</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="ghee.webp" alt="Ghee" />
+                    <h1>Ghee</h1>
+                    <div class="price">$7.13 - 750gms</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="lassi.webp" alt="Lassi" />
+                    <h1>Lassi</h1>
+                    <div class="price">$3.33 - 250ml</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a class="btn" href="#">Add to cart</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--CATEGORIES-->
+    <section class="categories" id="categories">
+        <h1 class="heading">Product <span>Categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="set1.webp" alt="Vegetables" />
+                <h3>Vegetables</h3>
+                <p>Up to 45% off</p>
+                <a href="#Vegetables" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="set2.webp" alt="Fruits" />
+                <h3>Fruits</h3>
+                <p>Up to 45% off</p>
+                <a href="#Fruits" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="set3.webp" alt="Fresh Meat" />
+                <h3>Fresh Meat</h3>
+                <p>Up to 45% off</p>
+                <a href="#Meat" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="set4.webp" alt="Dairy Products" />
+                <h3>Dairy Products</h3>
+                <p>Up to 45% off</p>
+                <a href="#Diary" class="btn">shop now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Reviews-->
+    <section class="review" id="review">
+      <h1 class="heading">Customer's <span>Review</span></h1>
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="pavan1.jpg" alt="Pavan Vasam" />
+            <p>
+              I was impressed by the range of specialty and the organic products
+              that are available, which I usually can’t find at my local supermarket.
+            </p>
+            <h3>Pavan Vasam</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="vishwa.jpg" alt="Vishwa Teja" />
+            <p>
+              Despite a small delay in delivery, the customer support team
+              responded quickly and kept me updated until my groceries arrived.
+            </p>
+            <h3>Vishwa Teja</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="veera.jpg" alt="Veera Vardhan" />
+            <p>
+              I love how this online store consistently offers great discounts
+              and bundle deals that actually help me save money compared to
+              shopping in person.
+            </p>
+            <h3>Veera Vardhan</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="madhu.jpg" alt="Madhusudhan" />
+            <p>
+              The delivery driver was professional and polite, and everything
+              was packed so well that not a single item was bruised or damaged.
+            </p>
+            <h3>Madhusudhan</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="prem.jpg" alt="PremSai" />
+            <p>
+              Although a couple of items were out of stock, the store suggested
+              great substitutes, and the overall shopping experience was still
+              smooth and efficient.
+            </p>
+            <h3>PremSai</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="cherry.jpg" alt="Charan Theja" />
+            <p>
+              The website was incredibly easy to use, and I managed to complete
+              my entire weekly grocery shopping in under ten minutes without
+              missing a thing.
+            </p>
+            <h3>Charan Theja</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="luqman.jpg" alt="Luqman Asim" />
+            <p>
+              I was pleasantly surprised by how quickly my order arrived, with
+              all the produce looking fresh and the frozen items still perfectly
+              cold.
+            </p>
+            <h3>Luqman Asim</h3>
+            <div class="stars">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--blogs-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Our <span>Blogs</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="blog1.webp" alt="Blog 1" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user"></i> By user</a>
+              <a href="#"><i class="fa fa-calendar"></i> 30 Sep 2024</a>
+            </div>
+            <h3>Fresh And Organic Vegetables And Fruits</h3>
+            <p>
+              I love this store and its delivery system; very unique products
+              are available.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog2.webp" alt="Blog 2" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user"></i> By user</a>
+              <a href="#"><i class="fa fa-calendar"></i> 30 Sep 2024</a>
+            </div>
+            <h3>Fresh And Organic Vegetables And Fruits</h3>
+            <p>
+              I love this store and its delivery system; very unique products
+              are available.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="blog3.webp" alt="Blog 3" />
+          <div class="content">
+            <div class="icons">
+              <a href="#"><i class="fa fa-user"></i> By user</a>
+              <a href="#"><i class="fa fa-calendar"></i> 30 Sep 2024</a>
+            </div>
+            <h3>Fresh And Organic Vegetables And Fruits</h3>
+            <p>
+              I love this store and its delivery system; very unique products
+              are available.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer" id="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Grocery <i class="fa fa-cart-arrow-down"></i></h3>
+          <p>
+            Feel free to contact us and share your experience or to support us
+            through Social Media
+          </p>
+          <div class="share">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Contact Info</h3>
+          <div class="share1">
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9876543210</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 9123456789</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> grocerystore@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> Hyderabad, India</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Quick Links</h3>
+          <div class="share1">
+            <a href="#home" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+            <a href="#features" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+            <a href="#products" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+            <a href="#categories" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+            <a href="#review" class="links"><i class="fa fa-arrow-right"></i> Reviews</a>
+            <a href="#blogs" class="links"><i class="fa fa-arrow-right"></i> Blogs</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>News Letter</h3>
+          <p>Subscribe for latest updates</p>
+          <input type="email" class="email" placeholder="enter your email" />
+          <input type="submit" class="btn" value="Subscribe" />
+          <img src="foot1.jpg" alt="Newsletter" />
+        </div>
+      </div>
+
+      <div class="credit">Created by <span>Charan Theja</span> All rights reserved</div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
